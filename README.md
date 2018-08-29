@@ -1,8 +1,8 @@
-#Python3+Scrapy爬取[bgm.tv](https://bgm.tv/anime/browser?sort=rank)动画排行版
+# Python3+Scrapy爬取[bgm.tv](https://bgm.tv/anime/browser?sort=rank)动画排行版
 
-##1. Scrapy简介
+## 1. Scrapy简介
 
-###Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。
+### Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。
 
 1. **引擎（Engine）**：负责控制数据流在系统中所有组件中流动，并在相应动作发生时触发事件。
 2. **调度器（Scheduler）**：从引擎接受request并将他们入队，以便之后引擎请求他们时提供给引擎。
@@ -22,13 +22,13 @@
    + 引擎将(Spider返回的)爬取到的Item给Item Pipeline，将(Spider返回的)Request给调度器。
    + (从第二步)重复直到调度器中没有更多地request，引擎关闭该网站。
 
-##2. Scrapy基本命令
+## 2. Scrapy基本命令
 
 + 安装：'pip install scrapy'
 + 创建项目：'scrapy startproject 项目名'
 + 启动爬虫：'scrapy crawl 爬虫名'
 
-##3. 运行
+## 3. 运行
 
 + 'cd bgmScrapy' -> 'scrapy crawl bgmScrapy'
 + 结果保存在bangumiScrapyOutput.csv
